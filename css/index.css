@@ -7,6 +7,9 @@ Twitter: @rich_clark
 
 Edited by Devin Warrick
 */
+* {
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -86,6 +89,7 @@ video {
 }
 body {
   line-height: 1;
+  width: 100%;
 }
 article,
 aside,
@@ -159,4 +163,17 @@ hr {
 input,
 select {
   vertical-align: middle;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 0 30% 0 30%;
+  background: rgba(227, 179, 125, 0.5);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
 }
