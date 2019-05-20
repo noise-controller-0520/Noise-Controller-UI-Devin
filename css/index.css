@@ -7,9 +7,6 @@ Twitter: @rich_clark
 
 Edited by Devin Warrick
 */
-* {
-  box-sizing: border-box;
-}
 html,
 body,
 div,
@@ -163,6 +160,9 @@ hr {
 input,
 select {
   vertical-align: middle;
+}
+* {
+  box-sizing: border-box;
 }
 a,
 p {
