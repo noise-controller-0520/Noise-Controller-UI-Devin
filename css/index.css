@@ -174,6 +174,13 @@ p {
 .spacer {
   margin: 50px;
 }
+.button {
+  background: #E3B37D;
+  border: 2px solid white;
+}
+.button:hover {
+  background: #63B406;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -203,12 +210,17 @@ header .header__text {
   box-shadow: 0 0 10px black;
 }
 header .header__text h1,
-header .header__text p,
-header .header__text a {
+header .header__text p {
   color: #FBFBFB;
 }
 header .header__text h1 {
   font-size: 3rem;
+}
+header .header__text .button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 20px;
+  border-radius: 5px;
 }
 nav {
   z-index: 50;
@@ -252,4 +264,28 @@ nav a:hover {
 }
 footer {
   text-align: center;
+}
+.carousel__header {
+  padding-right: 2%;
+  text-align: center;
+}
+.carousel__header h2 {
+  font-size: 2rem;
+}
+.carousel {
+  max-width: 1200px;
+  min-height: 480px;
+  border: 3px solid #242B48;
+  margin: 0 auto;
+}
+.carousel .slide {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+}
+.carousel .slide .slide__img {
+  width: 48%;
+}
+.carousel .slide .slide__text {
+  width: 48%;
 }
