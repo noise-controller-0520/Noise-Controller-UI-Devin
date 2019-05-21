@@ -8,6 +8,7 @@
 }
 
 .carousel {
+    overflow: hidden;
     position: relative;
     background: rgba(255, 255, 255, 0.5);
     max-width: 1200px;
@@ -54,6 +55,7 @@
     }
 
     .slide {
+        z-index: 0;
         display: none;
         // display: flex;
         width: 90%;
@@ -69,15 +71,23 @@
 
         .slide__img {
             width: 48%;
+            height: 100%;
             flex: 1;
 
             @media @tablet {
-                width: 60%;
+                width: 100%;
                 margin: 0 auto;
+            }
+
+            img {
+                width: auto;
+                height: 100%;
+                border-radius: 3px;
             }
         }
 
         .slide__text {
+            padding-left: 10px;
             width: 48%;
             height: 100%;
             display: flex;
@@ -86,7 +96,7 @@
             flex: 1;
 
             @media @tablet {
-                width: 90%;
+                width: 100%;
                 text-align: center;
             }
         }

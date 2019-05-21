@@ -376,6 +376,7 @@ footer {
   font-size: 2rem;
 }
 .carousel {
+  overflow: hidden;
   position: relative;
   background: rgba(255, 255, 255, 0.5);
   max-width: 1200px;
@@ -415,6 +416,7 @@ footer {
   opacity: 1;
 }
 .carousel .slide {
+  z-index: 0;
   display: none;
   width: 90%;
   height: 100%;
@@ -430,15 +432,22 @@ footer {
 }
 .carousel .slide .slide__img {
   width: 48%;
+  height: 100%;
   flex: 1;
 }
 @media only screen and (max-width: 800px) {
   .carousel .slide .slide__img {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
 }
+.carousel .slide .slide__img img {
+  width: auto;
+  height: 100%;
+  border-radius: 3px;
+}
 .carousel .slide .slide__text {
+  padding-left: 10px;
   width: 48%;
   height: 100%;
   display: flex;
@@ -448,7 +457,7 @@ footer {
 }
 @media only screen and (max-width: 800px) {
   .carousel .slide .slide__text {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 }
