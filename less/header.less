@@ -7,6 +7,12 @@ header {
     .header__img {
 
         width: 100%;
+        height: 100vh;
+
+        @media @mobile {
+            // margin-bottom: 5px;
+        }
+
         img {
 
             width: 100%;
@@ -21,6 +27,7 @@ header {
         position: absolute;
         width: 50%;
         max-width: 500px;
+        min-width: 250px;
         background: @font-color;
         margin: 0 auto;
         height: 300px;
@@ -30,13 +37,15 @@ header {
         text-align: center;
         box-shadow: 0 0 10px black;
 
+        @media @tablet {
+            width: 80%;
+        }
+
         h1, p {
             color: @bg-color-primary;
         }
 
-        h1 {
-            font-size: 3rem;
-        }
+
         .button {
             display: block;
             margin: 0 auto;

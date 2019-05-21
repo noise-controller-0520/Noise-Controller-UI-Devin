@@ -2,16 +2,33 @@ nav {
     z-index: 50;
     position: fixed;
     width: 100%;
-    padding: 0 30% 0 30%;
-    background: fade(@bg-color-secondary, 90%);
-    height: 70px;
+    padding: 0 25% 0 25%;
+    background: fade(@accent-color, 90%);
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    @media @tablet {
+        padding: 0 15% 0 15%;
+    }
+
+    @media @mobile {
+        padding: 0;
+        flex-direction: column;
+        position: absolute;
+    }
+
     a {
         &:hover {
             color: white;
+        }
+
+        @media @mobile {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            margin: 7px%;
         }
     }
 }

@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: @bg-color-primary;
+}
+
 a, p {
     color: @font-color;
 }
@@ -11,13 +15,35 @@ p {
 }
 
 .spacer {
-    margin: 50px;
+    margin: 25px;
+
+    @media @mobile {
+        margin: 85px;
+    }
 }
 
 .button {
     background: @bg-color-secondary;
     border: 2px solid white;
     &:hover {
+        color: white;
         background: @accent-color;
+        box-shadow: 0 0 10px white;
     }
+}
+
+emphasis {
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
 }
