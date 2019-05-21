@@ -468,16 +468,18 @@ footer {
   justify-content: space-evenly;
   flex: 1;
 }
+.carousel .slide .slide__text .no-mobile {
+  display: none;
+}
 @media only screen and (max-width: 800px) {
   .carousel .slide .slide__text {
     width: 100%;
     text-align: center;
+    padding: 10px 0 0 0;
   }
 }
-.carousel .slide .slide__text h2,
-.carousel .slide .slide__text h3 {
-  flex: 1;
-}
-.carousel .slide .slide__text p {
-  flex: 3;
+@media only screen and (max-width: 500px) {
+  .carousel .slide .slide__text .no-mobile {
+    display: none;
+  }
 }
