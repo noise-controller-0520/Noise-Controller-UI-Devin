@@ -191,6 +191,18 @@ p {
   background: #BD8C84;
   box-shadow: 0 0 10px white;
 }
+emphasis {
+  font-weight: bolder;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -231,9 +243,6 @@ header .header__text {
 header .header__text h1,
 header .header__text p {
   color: #F0C598;
-}
-header .header__text h1 {
-  font-size: 3rem;
 }
 header .header__text .button {
   display: block;
@@ -327,7 +336,6 @@ nav a:hover {
   }
 }
 .container .content .content__text h2 {
-  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 .container .content .content__img {
@@ -382,7 +390,7 @@ footer {
   max-width: 1200px;
   width: 80%;
   height: 480px;
-  border: 3px solid #250906;
+  border: 3px solid #8B2818;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -390,7 +398,7 @@ footer {
 }
 @media only screen and (max-width: 800px) {
   .carousel {
-    height: 60vh;
+    height: 70vh;
   }
 }
 .carousel .left-btn {
@@ -434,20 +442,25 @@ footer {
   width: 48%;
   height: 100%;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 800px) {
   .carousel .slide .slide__img {
     width: 100%;
     margin: 0 auto;
+    height: 40%;
   }
 }
 .carousel .slide .slide__img img {
-  width: auto;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 3px;
+  box-shadow: 0 0 5px black;
 }
 .carousel .slide .slide__text {
-  padding-left: 10px;
+  padding: 10px 0 0 10px;
   width: 48%;
   height: 100%;
   display: flex;
@@ -460,4 +473,11 @@ footer {
     width: 100%;
     text-align: center;
   }
+}
+.carousel .slide .slide__text h2,
+.carousel .slide .slide__text h3 {
+  flex: 1;
+}
+.carousel .slide .slide__text p {
+  flex: 3;
 }
