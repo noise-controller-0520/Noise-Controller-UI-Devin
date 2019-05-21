@@ -278,9 +278,14 @@ footer {
   border: 3px solid #242B48;
   margin: 0 auto;
 }
+.carousel .btn {
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+}
 .carousel .slide {
-  display: flex;
-  padding: 20px 50px;
+  display: none;
+  padding: 20px 35px;
   justify-content: space-between;
 }
 .carousel .slide .slide__img {
