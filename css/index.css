@@ -192,6 +192,9 @@ header {
 }
 header .header__img {
   width: 100%;
+  height: 100vh;
+}
+@media only screen and (max-width: 500px) {
 }
 header .header__img img {
   width: 100%;
@@ -203,6 +206,7 @@ header .header__text {
   position: absolute;
   width: 50%;
   max-width: 500px;
+  min-width: 250px;
   background: #250906;
   margin: 0 auto;
   height: 300px;
@@ -211,6 +215,11 @@ header .header__text {
   justify-content: space-evenly;
   text-align: center;
   box-shadow: 0 0 10px black;
+}
+@media only screen and (max-width: 800px) {
+  header .header__text {
+    width: 80%;
+  }
 }
 header .header__text h1,
 header .header__text p {
@@ -229,15 +238,35 @@ nav {
   z-index: 50;
   position: fixed;
   width: 100%;
-  padding: 0 30% 0 30%;
-  background: rgba(139, 40, 24, 0.9);
-  height: 70px;
+  padding: 0 25% 0 25%;
+  background: rgba(189, 140, 132, 0.9);
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 800px) {
+  nav {
+    padding: 0 15% 0 15%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  nav {
+    padding: 0;
+    flex-direction: column;
+    position: absolute;
+  }
+}
 nav a:hover {
   color: white;
+}
+@media only screen and (max-width: 500px) {
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 7px%;
+  }
 }
 .container .about.content {
   margin: 5% auto;
@@ -259,17 +288,20 @@ nav a:hover {
 }
 @media only screen and (max-width: 800px) {
   .container .content {
-    margin: 10px 0;
+    margin: 10px;
+    padding: 10px 0;
   }
 }
 @media only screen and (max-width: 500px) {
   .container .content {
     flex-wrap: wrap;
+    border-top: 1px solid #250906;
   }
 }
 .container .content .content__text {
   background: #8B2818;
-  width: 47%;
+  border-radius: 3px;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -283,6 +315,7 @@ nav a:hover {
     width: 100%;
     order: 2;
     margin-bottom: 25px;
+    margin: 0;
   }
 }
 .container .content .content__text h2 {
@@ -319,6 +352,9 @@ nav a:hover {
   border-radius: 5px;
 }
 footer {
+  background: rgba(189, 140, 132, 0.9);
+  padding: 20px 0 0;
+  height: 70px;
   text-align: center;
 }
 .carousel__header {
@@ -329,16 +365,21 @@ footer {
   font-size: 2rem;
 }
 .carousel {
-  background: rgba(255, 255, 255, 0.5);
   position: relative;
+  background: rgba(255, 255, 255, 0.5);
   max-width: 1200px;
   width: 80%;
-  min-height: 480px;
+  height: 480px;
   border: 3px solid #250906;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .carousel {
+    height: 60vh;
+  }
 }
 .carousel .left-btn {
   left: 0;
@@ -365,13 +406,38 @@ footer {
 .carousel .slide {
   display: none;
   width: 90%;
+  height: 100%;
   margin: 0 auto;
   padding: 20px 35px;
   justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .carousel .slide {
+    flex-direction: column;
+  }
 }
 .carousel .slide .slide__img {
   width: 48%;
+  flex: 1;
+}
+@media only screen and (max-width: 800px) {
+  .carousel .slide .slide__img {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
 .carousel .slide .slide__text {
   width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+}
+@media only screen and (max-width: 800px) {
+  .carousel .slide .slide__text {
+    width: 90%;
+    text-align: center;
+  }
 }
