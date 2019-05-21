@@ -273,14 +273,42 @@ footer {
   font-size: 2rem;
 }
 .carousel {
+  position: relative;
   max-width: 1200px;
   min-height: 480px;
   border: 3px solid #242B48;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel .left-btn {
+  left: 0;
+}
+.carousel .right-btn {
+  right: 0;
+}
+.carousel .btn {
+  z-index: 50;
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel .btn img {
+  opacity: 0.5;
+}
+.carousel .btn:hover img {
+  opacity: 1;
 }
 .carousel .slide {
-  display: flex;
-  padding: 20px 50px;
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 35px;
   justify-content: space-between;
 }
 .carousel .slide .slide__img {
