@@ -187,7 +187,9 @@ p {
   border: 2px solid white;
 }
 .button:hover {
+  color: white;
   background: #BD8C84;
+  box-shadow: 0 0 10px white;
 }
 header {
   display: flex;
@@ -356,6 +358,9 @@ nav a:hover {
   padding: 8px 20px;
   border: 2px solid #250906;
   border-radius: 5px;
+}
+.container .content .button:hover {
+  border: 2px solid white;
 }
 footer {
   background: rgba(189, 140, 132, 0.9);
