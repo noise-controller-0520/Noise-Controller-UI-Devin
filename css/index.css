@@ -286,8 +286,8 @@ nav a:hover {
 @media only screen and (max-width: 500px) {
   nav a {
     text-align: center;
-    padding: 10px;
-    margin: 3%;
+    padding: 7px;
+    margin: 7px;
     order: 2;
   }
 }
@@ -298,7 +298,6 @@ nav a img {
 @media only screen and (max-width: 500px) {
   nav .logo {
     order: 1;
-    margin: 0;
   }
 }
 .container .about.content {
@@ -313,6 +312,7 @@ nav a img {
 }
 .container .about.content img.about {
   max-height: 400px;
+  border-radius: 5px;
 }
 .container .content {
   display: flex;
@@ -514,7 +514,7 @@ footer p {
 .carousel .slide .slide__text a:hover {
   color: #222948;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .carousel .slide .slide__text a {
     margin: 0 auto;
   }
