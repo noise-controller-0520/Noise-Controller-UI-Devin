@@ -100,7 +100,7 @@
             justify-content: space-evenly;
             flex: 1;
 
-            .no-mobile {display: none;}  // Comment this or delete once all descriptions are filled.
+            // .no-mobile {display: none;}  // Comment this or delete once all descriptions are filled.
 
             @media @tablet {
                 width: 100%;
@@ -115,9 +115,10 @@
             }
 
             a {
-                width: 150px;
+                width: 180px;
                 padding: 5px;
-                &:hover {color: @accent-color;}
+                color: @accent-color;
+                &:hover {color: white;}
                 @media @tablet{margin: 0 auto;}
             }
 
