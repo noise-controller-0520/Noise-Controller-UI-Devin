@@ -130,6 +130,6 @@ class Carousel {
 }
 
 let carousel = document.querySelector(".carousel");
-console.log(carousel);
-new Carousel(carousel);
-
+if(carousel){
+    new Carousel(carousel);
+}
