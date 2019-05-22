@@ -192,10 +192,11 @@ p {
 }
 .button {
   background: #44A406;
-  border: 2px solid #E3B37D;
+  border: 2px solid #44A406;
 }
 .button:hover {
   color: white;
+  border: 2px solid white;
   background: #222948;
   box-shadow: 0 0 10px white;
 }
@@ -252,7 +253,13 @@ header .header__text h1 {
   font-size: 4rem;
 }
 header .header__text p {
-  color: #E3B37D;
+  color: white;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  header .header__text p {
+    font-size: 1.5rem;
+  }
 }
 header .header__text .button {
   display: block;
@@ -265,7 +272,8 @@ nav {
   position: fixed;
   width: 100%;
   padding: 0 10%;
-  background: rgba(68, 164, 6, 0.9);
+  background: #44A406;
+  opacity: 0.9;
   min-height: 110px;
   display: flex;
   justify-content: space-between;
@@ -357,7 +365,7 @@ nav .logo .amatic {
   margin-bottom: 1.5rem;
 }
 .container .content .content__text p {
-  color: #E3B37D;
+  color: white;
 }
 .container .content .content__text span.amatic {
   font-size: 1.5rem;
@@ -400,10 +408,32 @@ nav .logo .amatic {
   max-width: 1200px;
   width: 80%;
 }
+@media only screen and (max-width: 800px) {
+  .container .about.content {
+    flex-wrap: wrap;
+  }
+  .container .about.content .content__img {
+    width: 100%;
+    order: 1;
+  }
+  .container .about.content .content__text {
+    width: 100%;
+    order: 2;
+  }
+}
 .container .about.content .button {
   width: 300px;
   padding: 16px 40px;
   margin: 0 auto;
+  background: #222948;
+  border: 2px solid #222948;
+  color: white;
+}
+.container .about.content .button:hover {
+  color: black;
+  border: 2px solid #44A406;
+  background: #44A406;
+  box-shadow: 0 0 10px black;
 }
 .container .about.content img.about {
   max-height: 400px;
@@ -423,6 +453,7 @@ footer p {
   line-height: 1.4;
 }
 .carousel__header {
+  margin-bottom: 10px;
   padding-right: 2%;
   text-align: center;
 }
@@ -432,11 +463,12 @@ footer p {
 .carousel {
   overflow: hidden;
   position: relative;
-  background: rgba(227, 179, 125, 0.5);
+  background: rgba(255, 255, 255, 0.9);
   max-width: 1200px;
   width: 80%;
   height: 480px;
-  border: 3px solid #44A406;
+  box-shadow: 0 0 10px #222948;
+  border-radius: 5px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
