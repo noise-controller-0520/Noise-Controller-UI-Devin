@@ -298,13 +298,13 @@ nav a img {
   width: 100px;
   height: auto;
 }
+nav .logo .amatic {
+  color: black;
+}
 @media only screen and (max-width: 500px) {
   nav .logo {
     order: 1;
   }
-}
-nav .logo .amatic {
-  color: black;
 }
 .container .about.content {
   margin: 5% auto;
@@ -414,6 +414,9 @@ footer p {
 .carousel__header {
   padding-right: 2%;
   text-align: center;
+}
+.carousel__header h2 {
+  color: black;
 }
 .carousel {
   overflow: hidden;
