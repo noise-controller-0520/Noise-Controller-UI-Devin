@@ -167,6 +167,9 @@ select {
 }
 .amatic {
   font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #44A406;
 }
 body {
   background: #FBFBFB;
@@ -174,7 +177,7 @@ body {
 a,
 p {
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 p {
   line-height: 1.3;
@@ -300,6 +303,9 @@ nav a img {
     order: 1;
   }
 }
+nav .logo .amatic {
+  color: black;
+}
 .container .about.content {
   margin: 5% auto;
   max-width: 1200px;
@@ -340,7 +346,6 @@ nav a img {
   flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  max-height: 400px;
   padding: 4% 2.5%;
   margin: 1% 2.5%;
 }
@@ -355,6 +360,12 @@ nav a img {
 .container .content .content__text h2,
 .container .content .content__text p {
   margin-bottom: 1.5rem;
+}
+.container .content .content__text p {
+  color: #E3B37D;
+}
+.container .content .content__text span.amatic {
+  font-size: 1.5rem;
   color: #E3B37D;
 }
 .container .content .content__img {
@@ -403,9 +414,6 @@ footer p {
 .carousel__header {
   padding-right: 2%;
   text-align: center;
-}
-.carousel__header h2 {
-  font-size: 2rem;
 }
 .carousel {
   overflow: hidden;
