@@ -1,13 +1,22 @@
 * {
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.amatic {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: @color-primary;
 }
 
 body {
-    background: @bg-color-primary;
+    background: @bg-color;
 }
 
 a, p {
     color: @font-color;
+    font-size: 1.5rem;
 }
 
 p {
@@ -15,16 +24,16 @@ p {
 }
 
 .spacer {
-    margin: 25px;
+    margin: 50px;
 
     @media @mobile {
-        margin: 85px;
+        margin: 120px;
     }
 }
 
 .button {
-    background: @bg-color-secondary;
-    border: 2px solid white;
+    background: @color-primary;
+    border: 2px solid @color-secondary;
     &:hover {
         color: white;
         background: @accent-color;
