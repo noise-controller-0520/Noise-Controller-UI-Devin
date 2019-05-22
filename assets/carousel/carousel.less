@@ -102,17 +102,24 @@
             justify-content: space-evenly;
             flex: 1;
 
+            .no-mobile {display: none;}  // Comment this or delete once all descriptions are filled.
+
             @media @tablet {
                 width: 100%;
                 text-align: center;
+                padding: 10px 0 0 0;
             }
 
-            h2, h3 {
-                flex: 1;
+            @media @mobile {
+                .no-mobile {
+                    display: none;
+                }
             }
 
-            p {
-                flex: 3;
+            a {
+                width: 120px;
+                padding: 5px;
+                &:hover {color: @bg-color-secondary;}
             }
 
         }
