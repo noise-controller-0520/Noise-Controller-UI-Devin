@@ -4,7 +4,7 @@ The Marketing Front Page for the Noise Controller Application.
 
 ## Looking for the viewable website?
 
-[Click here!](thenoisecontroller.netlify.com)
+[Click here!](https://thenoisecontroller.netlify.com/)
 
 ## About
 
