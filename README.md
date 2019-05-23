@@ -10,6 +10,8 @@ The Marketing Front Page for the Noise Controller Application.
 
 Noise Controller is an app that helps teachers control the volume of their classroom through the use of gamification. This marketing site helps market the product to potential teachers, and encourage them to try out Noise Controller.
 
+Website has a homepage and an About page. Clicking `Get Started` on any page will link to the Front-End portion of this project. [(Click here to link to FE Repository)](https://github.com/noise-controller-0520/noise-controller-0520-FE/tree/master/noise_controller)
+
 ## Setup
 
 The following programs and setups were used for this project:
@@ -25,7 +27,7 @@ All links direct to the repo related to this project, with the exception of the 
 * **Daniel Weinman** - Team Lead [(GitHub)](https://github.com/notontilt09)
 * **Dave Irwin** - UI Developer [(GitHub)](https://github.com/noise-controller-0520/noise-controller-0520-UI-Dave)
 * **Dein Warrick** - UI Devloper [(GitHub)](#About)
-* **James Pak** - Front-end Dev [(GitHub)](https://github.com/noise-controller-0520/noise-controller-0520-FE)
+* **James Pak** - Front-end Dev [(GitHub)](https://github.com/noise-controller-0520/noise-controller-0520-FE/tree/master/noise_controller)
 * **Josh gorton** - Back-end Dev [(GitHub)](https://github.com/noise-controller-0520/Noise-Controller-0520-BE)
 
 ## How to Contribute
