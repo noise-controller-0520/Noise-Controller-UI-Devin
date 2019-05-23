@@ -54,6 +54,8 @@
 
         .content__img {
             width: 50%;
+            display: flex;
+            justify-content: center;
 
             @media @mobile {
                 width: 100%;
@@ -61,10 +63,11 @@
             }
 
             img {
-                width: 100%;
+                width: 60%;
                 height: auto;
-                min-height: 400px;
-                object-fit: cover;
+                object-fit: contain;
+                margin: 0 auto;
+                // min-width: 20%;
 
                 @media @tablet {
                     min-height: 200px;
@@ -93,15 +96,20 @@
         max-width: 1200px;
         width: 80%;
 
-        @media @tablet {
+        @media only screen and (max-width: 1000px) {
             flex-wrap: wrap;
 
             .content__img {
                 width: 100%;
                 order: 1;
+
+                img.about {
+                    max-height: 400px;
+                }
             }
 
             .content__text {
+                margin-top: 10px;
                 width: 100%;
                 order: 2;
             }
@@ -124,7 +132,8 @@
         }
 
         img.about {
-            max-height: 400px;
+            width: 100%;
+            max-height: 600px;
             border-radius: 10px;
             object-fit: cover;
 

@@ -374,6 +374,8 @@ nav .logo .amatic {
 }
 .container .content .content__img {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width: 600px) {
   .container .content .content__img {
@@ -382,10 +384,10 @@ nav .logo .amatic {
   }
 }
 .container .content .content__img img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  min-height: 400px;
-  object-fit: cover;
+  object-fit: contain;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 800px) {
   .container .content .content__img img {
@@ -408,7 +410,7 @@ nav .logo .amatic {
   max-width: 1200px;
   width: 80%;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .container .about.content {
     flex-wrap: wrap;
   }
@@ -416,7 +418,11 @@ nav .logo .amatic {
     width: 100%;
     order: 1;
   }
+  .container .about.content .content__img img.about {
+    max-height: 400px;
+  }
   .container .about.content .content__text {
+    margin-top: 10px;
     width: 100%;
     order: 2;
   }
@@ -436,7 +442,8 @@ nav .logo .amatic {
   box-shadow: 0 0 10px black;
 }
 .container .about.content img.about {
-  max-height: 400px;
+  width: 100%;
+  max-height: 600px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -564,7 +571,7 @@ footer p {
   color: #222948;
 }
 .carousel .slide .slide__text a:hover {
-  color: white;
+  color: #44A406;
 }
 @media only screen and (max-width: 800px) {
   .carousel .slide .slide__text a {
