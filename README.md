@@ -17,17 +17,18 @@ The following programs and setups were used for this project:
 * less-watch-compiler - Compiling .less files to .css
 * Greensock code - Carousel animation
 
+
 * Both html files refer to `index.css` for styling
 * Both html files also call the JS scripts, even though `index.html` has no JS.
 
 ## Team
 
 All links direct to the repo related to this project, with the exception of the Team Lead, whose link directs to his GitHub profile.
-* Daniel Weinman - Team Lead [GitHub] (https://github.com/notontilt09)
-* Dave Irwin - UI Developer [GitHub] (https://github.com/noise-controller-0520/noise-controller-0520-UI-Dave)
+* Daniel Weinman - Team Lead [GitHub](https://github.com/notontilt09)
+* Dave Irwin - UI Developer [GitHub](https://github.com/noise-controller-0520/noise-controller-0520-UI-Dave)
 * Dein Warrick - UI Devloper [GitHub](#About)
-* James Pak - Front-end Dev [GitHub] (https://github.com/noise-controller-0520/noise-controller-0520-FE)
-* Josh gorton - Back-end Dev [GitHub] (https://github.com/noise-controller-0520/Noise-Controller-0520-BE)
+* James Pak - Front-end Dev [GitHub](https://github.com/noise-controller-0520/noise-controller-0520-FE)
+* Josh gorton - Back-end Dev [GitHub](https://github.com/noise-controller-0520/Noise-Controller-0520-BE)
 
 ## How to Contribute
 
