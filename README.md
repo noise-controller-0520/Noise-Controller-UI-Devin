@@ -1,9 +1,11 @@
 # Noise Controller
 
-The marketing Front Page for the Noise Controller Application.
+The Marketing Front Page for the Noise Controller Application.
 
-**TO DO LIST:**
-* [ ] **Clone, Branch, Commit, Push**
-* [ ] Design HTML for index page
-* [x] Assign potential color palettes based on different settings
-* [ ] Fill out this README with better info
+## How to Contribute
+
+If you have styling suggestions, or extra info you think should be added to the website, feel free to make any changes:
+* Clone and Download the repository
+* Change any files with necessary content
+* Submit a Pull Request 
+  * Please add the Noise Controller Team as Reviewers, so we can review your content before merging the pull request.
