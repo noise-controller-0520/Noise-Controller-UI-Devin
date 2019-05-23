@@ -80,9 +80,8 @@ class Carousel {
         this.slides = carousel.querySelectorAll(".slide");
 
         // Set initial display image and slide in
-        this.displayIndex = Math.round(Math.random() * this.slides.length);
+        this.displayIndex = Math.floor(Math.random() * this.slides.length);
         this.displaySlide = this.slides[this.displayIndex];
-        console.log(this.displaySlide);
         slideRightIn(this.displaySlide);
 
         // Each event listener
