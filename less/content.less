@@ -54,6 +54,8 @@
 
         .content__img {
             width: 50%;
+            display: flex;
+            justify-content: center;
 
             @media @mobile {
                 width: 100%;
@@ -61,10 +63,11 @@
             }
 
             img {
-                width: 100%;
+                width: 60%;
                 height: auto;
-                min-height: 400px;
-                object-fit: cover;
+                object-fit: contain;
+                margin: 0 auto;
+                // min-width: 20%;
 
                 @media @tablet {
                     min-height: 200px;
@@ -124,6 +127,7 @@
         }
 
         img.about {
+            width: 100%;
             max-height: 400px;
             border-radius: 10px;
             object-fit: cover;

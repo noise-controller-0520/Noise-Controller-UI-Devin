@@ -374,6 +374,8 @@ nav .logo .amatic {
 }
 .container .content .content__img {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width: 600px) {
   .container .content .content__img {
@@ -382,10 +384,10 @@ nav .logo .amatic {
   }
 }
 .container .content .content__img img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  min-height: 400px;
-  object-fit: cover;
+  object-fit: contain;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 800px) {
   .container .content .content__img img {
@@ -436,6 +438,7 @@ nav .logo .amatic {
   box-shadow: 0 0 10px black;
 }
 .container .about.content img.about {
+  width: 100%;
   max-height: 400px;
   border-radius: 10px;
   object-fit: cover;
