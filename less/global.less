@@ -57,3 +57,11 @@ h2 {
 h3 {
     font-size: 1.3rem;
 }
+
+::-webkit-scrollbar {width: 16px;}
+::-webkit-scrollbar-track {
+    background: fade(@color-primary, 90%);
+    // border: 1px solid white;
+}
+::-webkit-scrollbar-thumb {background: @accent-color;}
+::-webkit-scrollbar-thumb:hover {background: darken(@accent-color, 30%);}
