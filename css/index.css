@@ -212,6 +212,18 @@ h2 {
 h3 {
   font-size: 1.3rem;
 }
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(68, 164, 6, 0.9);
+}
+::-webkit-scrollbar-thumb {
+  background: #222948;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
 header {
   display: flex;
   flex-direction: column;
